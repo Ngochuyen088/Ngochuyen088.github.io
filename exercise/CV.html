@@ -2,17 +2,103 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>CV - Nguyễn Ngọc Huyền</title>
+  <title>CV - Nguyễn Ngọc Huyền </title>
+  <style>
+    /* CSS cho Navigation Bar */
+    body {
+      margin: 0;
+      padding: 0;
+      background: #ccc;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth; /* cuộn mượt */
+    }
+
+    nav#topmenu ul {
+      list-style: none;
+      background-color: #444;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav#topmenu li {
+      font-size: 20px;
+      line-height: 40px;
+      height: 40px;
+      display: inline-block;
+      padding: 20px;
+    }
+
+    nav#topmenu a {
+      text-decoration: none;
+      color: #fff;
+      transition: color 0.3s, background-color 0.3s;
+    }
+
+    nav#topmenu a:hover {
+      color: yellow;
+      background-color: #333;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    /* CSS cho CV */
+    header {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+    }
+
+    header img {
+      border-radius: 10px;
+      margin: 10px 0;
+    }
+
+    main {
+      padding: 20px;
+      background: #fff;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h3 {
+      color: #333;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #444;
+      color: #fff;
+    }
+  </style>
 </head>
 <body>
-  <header>
+  <!-- Navigation Bar -->
+  <nav id="topmenu">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#hocvan">Học vấn</a></li>
+      <li><a href="#kinhnghiem">Kinh nghiệm</a></li>
+      <li><a href="#kynang">Kỹ năng</a></li>
+      <li><a href="#lienhe">Liên hệ</a></li>
+    </ul>
+  </nav>
+
+  <!-- CV -->
+  <header id="home">
     <h2>Nguyễn Ngọc Huyền</h2>
     <img src="huyen.jpg" alt="Ảnh đại diện" width="150">
-    <p>Email: email@example.com | Điện thoại: 09xx xxx xxx</p>
+    <p>Email: 23070613@vnu.edu.vn | Điện thoại: 0980393666</p>
   </header>
 
   <main>
-    <section>
+    <section id="thongtin">
       <h3>I. Thông tin cá nhân</h3>
       <details>
         <summary>Chi tiết</summary>
@@ -23,7 +109,7 @@
       </details>
     </section>
 
-    <section>
+    <section id="hocvan">
       <h3>II. Học vấn</h3>
       <details>
         <summary>Chi tiết</summary>
@@ -31,7 +117,7 @@
           <li>Trường Quốc Tế - ĐHQGHN (2023-nay)</li>
           <li>Chứng chỉ:
             <ul>
-              <li>Management Information System</li>
+              <li>Information System</li>
               <li>Tableau Public</li>
             </ul>
           </li>
@@ -39,28 +125,28 @@
       </details>
     </section>
 
-    <section>
+    <section id="kinhnghiem">
       <h3>III. Kinh nghiệm làm việc</h3>
       <details>
         <summary>Chi tiết</summary>
         <ul>
-          <li>Product Manager - Công ty XYZ
+          <li>Database - Công ty XYZ
             <ul>
-              <li>Quản lý roadmap sản phẩm</li>
-              <li>Phân tích KPI</li>
+              <li>Quản lý sản phẩm</li>
+              <li>Quản lý cơ sở dữ liệu </li>
             </ul>
           </li>
-          <li> Information System - Công ty abc
+          <li> manage information - Công ty ABC
             <ul>
-              <li>Quản lý hệ thống thông tin</li>
-              <li> thiết kế CSDL</li>
+              <li> Quản lý thông tin </li>
+              <li>Tạo dashboard KPI</li>
             </ul>
           </li>
         </ul>
       </details>
     </section>
 
-    <section>
+    <section id="kynang">
       <h3>IV. Kỹ năng</h3>
       <details>
         <summary>Chi tiết</summary>
@@ -73,8 +159,8 @@
     </section>
 
     <section>
-      <h3>V. Video </h3>
-      <p>Gu nhạc:</p>
+      <h3>V. Video</h3>
+      <p>tư liệu:</p>
       <iframe width="560" height="315" 
               src="https://www.youtube.com/embed/gGA8HvhxjDA?start=1004" 
               title="YouTube video player" 
@@ -85,9 +171,10 @@
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Nguyễn Ngọc Huyền </p>
+  <footer id="lienhe">
+    <p>&copy; 2025 Nguyễn Ngọc Huyền</p>
   </footer>
 </body>
 </html>
+
 
