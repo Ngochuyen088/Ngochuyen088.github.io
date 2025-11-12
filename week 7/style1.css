@@ -1,18 +1,8 @@
-<!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <title>Đoạn văn màu sắc</title>
-    <link rel="stylesheet" href="style1.css">
-</head>
-<body>
-  <p>
+
+
     Hôm nay trời <span style="color: blue; font-weight: bold">đẹp</span>, 
     gió thì <span style="color:green; font-style:italic;">mát</span>, <br>
     còn tâm trạng mình thì <span style="color:red; font-weight:bold; font-style:italic;">sợ vì phải thi giữa kì</span>.</br> 
     Buổi sáng uống <span style="color:purple; font-weight:bold;">trà sữa khoai môn</span>, 
     nghe <span style="color:orange; font-style:italic;">nhạc anh tuấn cùi</span>, 
     và nghĩ về những <span style="color:teal; font-weight:bold; font-style:italic;">kế hoạch sắp tới</span>.
-  </p>
-
-</body>
-</html> 
